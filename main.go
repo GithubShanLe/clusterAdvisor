@@ -30,19 +30,6 @@ type ResultItems struct {
 	Message string `json:"message,omitempty"`
 	Reason  string `json:"reason,omitempty"`
 }
-type ClusterAdvision struct {
-	ClusterInfo
-	Result []AuditResults
-}
-
-type ClusterInfo struct {
-	RamId        string
-	ClusterId    string
-	Name         string
-	ProviderName string
-	Region       string
-	Version      string
-}
 
 // kubeconfig content
 var kubeconfig string = ``
